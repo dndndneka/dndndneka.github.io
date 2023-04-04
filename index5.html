@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>맨홀투어</title>
+        <style>
+            body { margin: 0; 
+            padding: 0;
+            background-color: black;} 
+
+            #text{
+                width: 470px;
+                height: 19px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                color: aliceblue;
+                animation:typing 4.5s steps(40);
+            }
+            @keyframes typing{
+                from{width: 0px;}
+                to{width: 470px;}
+            }
+
+            #container{
+                width: 800px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+            }
+            button.btn{
+                position: absolute;
+                left: 626px; bottom: 125px;
+                padding: 9px 36px;
+                background-color: transparent;
+                border: none;
+                border-radius: 50%;
+            } 
+            .btn:focus{
+                outline: none;
+            }
+            .btn:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p><br><br><br></p>
+        <p id="text">
+        여기는 베를린 브란덴부르크문. 바로 옆이 맛집이라 끼니때 구경하기 좋다.</p>
+        <br>
+       <div id="container">
+        <img src="https://drive.google.com/uc?id=1icHVF-SiURzQZEpd1J1x4lL0dCRuEI60"
+        width="800px" height="600px">
+        <button class="btn"
+        type="button"
+        onclick="location.href='file:///Users/jeong-youngseo/Desktop/%E1%84%89%E1%85%A6%E1%84%80%E1%85%A8%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%AE/index6.html'">
+        </button>
+       </div>
+
+    </body>
+</html>

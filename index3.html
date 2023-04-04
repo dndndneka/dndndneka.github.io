@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>맨홀투어</title>
+        <style>
+            body { margin: 0; 
+            padding: 0;
+            background-color: black;} 
+
+            #text{
+                width: 330px;
+                height: 19px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                color: aliceblue;
+                animation:typing 3.5s steps(30);
+            }
+            @keyframes typing{
+                from{width: 0px;}
+                to{width: 330px;}
+            }
+
+            .container{
+                width: 800px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+            }
+            .btn{
+                position: absolute;
+                left: 360px; bottom: 47px;
+                padding: 12px 29px;
+                background-color: transparent;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+            } 
+            .btn:focus{
+                outline: none;
+            }
+            .btn:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p><br><br><br></p>
+        <p id="text">
+        여기는 도쿄 시부야구. 포털이 차도에 있어 위험하다.</p>
+        <br>
+       <div class="container">
+        <img src="https://drive.google.com/uc?id=1sWR9f9G425B-tdQvNYTjjpC3mSyvOJVk"
+        width="800" height="600"
+        class="main"
+        alt="도쿄시부야">
+        <button class="btn"
+        type="button"
+        onclick="location.href='file:///Users/jeong-youngseo/Desktop/%E1%84%89%E1%85%A6%E1%84%80%E1%85%A8%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%AE/index4.html'">
+        </button>
+       </div>
+    </body>
+</html>

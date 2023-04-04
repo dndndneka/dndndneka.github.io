@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>맨홀투어</title>
+        <style>
+            body { margin: 0; 
+            padding: 0;
+            background-color: black;} 
+
+            #text{
+                width: 380px;
+                height: 19px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                color: aliceblue;
+                animation:typing 3.7s steps(32);
+            }
+            @keyframes typing{
+                from{width: 0px;}
+                to{width: 380px;}
+            }
+
+            #container{
+                width: 800px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+            }
+            button.btn{
+                position: absolute;
+                left: 300px; bottom: 124px;
+                padding: 12px 27px;
+                background-color: transparent;
+                border: none;
+                border-radius: 50%;
+            } 
+            .btn:focus{
+                outline: none;
+            }
+            .btn:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p><br><br><br></p>
+        <p id="text">
+        여기는 베트남 호이안. 밤에 와야 더 예쁘고 북적이는 곳이다.</p>
+        <br>
+
+       <div id="container">
+        <img src="https://drive.google.com/uc?id=1tcOAMBrw3z_DjAYG4Q_p_fl43-b6HG8I"
+        width="800px" height="600px">
+        <button class="btn"
+        type="button"
+        onclick="location.href='/Users/jeong-youngseo/Desktop/세계일주/index5.html'">
+        </button>
+       </div>
+
+    </body>
+</html>
