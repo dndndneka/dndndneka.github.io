@@ -8,11 +8,17 @@
         <style>
             body { margin: 0; 
             padding: 0;
-            background-color: black;} 
+            background-color: black;
+            } 
 
-            #text{text-align: center;
-            color: aliceblue;}
-
+            .txt{
+                display: flex;
+                color: aliceblue;
+                align-items: center;
+                justify-content: center;
+            
+            }
+        
             .container{
                 width: 800px;
                 overflow: hidden;
@@ -38,22 +44,28 @@
         </style>
     </head>
     <body>
-        <p><br><br><br></p>
-        <p id="text">
-        여기는 뉴욕 7번가.
-        <br>오늘은 티켓만 사러 왔다.</p>
-        
+        <div class="txt">
+            <p><br><br><br><span class="auto-type"></span></p>
+        </div>
        <div class="container">
         <img src="https://drive.google.com/uc?id=1PYZQXic92d-R0NFeogL2AZYa1VXEzzTc"
-        width="800" height="600"
+        width="800px" height="600px"
         class="main"
-        alt="뉴욕7번가">
+        alt="홍익대학교">
         <button class="btn"
         type="button"
         onclick="location.href='https://dndndneka.github.io/index3.html'">
         </button>
        </div>
 
-
+       <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+       <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["여기는 뉴욕 7번가.", "오늘은 티켓만 사러 왔다."],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: false
+        })
+       </script>
     </body>
 </html>

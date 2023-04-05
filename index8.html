@@ -10,9 +10,12 @@
             padding: 0;
             background-color: black;} 
 
-            #text{text-align: center;
-            color: aliceblue;}
-
+            .txt{
+                display: flex;
+                color: aliceblue;
+                align-items: center;
+                justify-content: center;
+            }
 
             #container{
                 width: 800px;
@@ -38,10 +41,10 @@
         </style>
     </head>
     <body>
-        <p><br><br><br></p>
-        <p id="text">
-        여기도 제주도.<br>아무래도 파리가 걸린다. 다시 맨홀을 찾자.</p>
-        
+        <div class="txt">
+            <p><br><br><br><span class="auto-type"></span></p>
+        </div>
+
        <div id="container">
         <img src="https://drive.google.com/uc?id=19IcsHui-2fgWSHv6DKSn9qCikNQze3CL"
         width="800px" height="600px">
@@ -50,6 +53,16 @@
         onclick="location.href='https://dndndneka.github.io/index9.html'">
         </button>
        </div>
+
+       <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+       <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["여기도 제주도.", "아무래도 파리가 걸린다. 다시 맨홀을 찾자."],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: false
+        })
+       </script>
 
     </body>
 </html>
