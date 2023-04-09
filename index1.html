@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>맨홀투어</title>
+        <style>
+            body { margin: 0; 
+            padding: 0;
+            background-color: black;
+            } 
+
+            .txt{
+                display: flex;
+                color: aliceblue;
+                align-items: center;
+                justify-content: center;
+            
+            }
+        
+            .container{
+                width: 800px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+            }
+            .btn{
+                position: absolute;
+                left: 208px; bottom: 125px;
+                padding: 8px 26px;
+                background-color: transparent;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+            } 
+            .btn:focus{
+                outline: none;
+            }
+            .btn:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="txt">
+            <p><br><br><br><span class="auto-type"></span></p>
+        </div>
+       <div class="container">
+        <img src="https://drive.google.com/uc?id=1noqS24k5Mi8d4egUjrYITk3uJ7GoWzhU"
+        width="800px" height="600px"
+        class="main"
+        alt="홍익대학교">
+        <button class="btn"
+        type="button"
+        onclick="location.href='https://dndndneka.github.io/index2.html'">
+        </button>
+       </div>
+
+       <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+       <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["여기는 홍익대학교.", "오늘의 맨홀투어 출발지다."],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: false
+        })
+       </script>
+    </body>
+</html>
